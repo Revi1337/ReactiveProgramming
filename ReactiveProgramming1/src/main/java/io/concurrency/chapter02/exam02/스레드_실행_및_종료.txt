@@ -1,0 +1,6 @@
+1. start() -> 스레드를 실행시키는 메서드로 System Call 을 통해서 Kernel 에 Kernel Thread 생성을 요청한다.
+        --> Kernal Thread 가 스케줄러에 의해 실행상태가 되면, JVM 이 내부적으로 run() 을 호출해준다.
+
+2. run() -> 스레드가 실행이되면 해당 스레드에 의해 자동으로 호출되는 메서드.
+        --> Thread 의 run() 의 호출되고 여기서 Runnable 구현체가 존재하면 Runnable 의 run() 을 실행하게 된다.
+
